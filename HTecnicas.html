@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example - Interfaz Ubuntu</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Librerías externas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body onload="openWindow('cv')">
+
+  <!-- Contenedor donde se carga la barra lateral y superior -->
+  <div id="menu-container"></div>
+
+  <!-- Contenido principal -->
+  <div class="main">
+    <!-- Contenedor para el mapa interactivo -->
+    <div id="mindmap" style="width:800px; height:800px; margin: auto;"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://d3js.org/d3.v7.min.js"></script> <!-- D3.js para el mapa -->
+  <script src="js/mapa.js"></script> <!-- Script del mapa -->
+  
+  <script>
+    function openWindow(windowName) {
+      // Siempre que se abra una ventana, se elimina el contenido del mapa
+      const mindmapContainer = document.getElementById("mindmap");
+      if (mindmapContainer) {
+        mindmapContainer.innerHTML = "";
+      }
+      
+      // Opcional: si se desea volver a cargar el mapa al abrir la ventana "mapa"
+      if (windowName === 'mapa') {
+        // Aquí podrías reinicializar el mapa si es necesario.
+        // Por ejemplo, llamando a una función loadMap() definida en mapa.js:
+        // loadMap();
+      }
+    }
+
+
+  
+    </script>
+    <script>
+      // Mostrar menú contextual personalizado al hacer clic derecho
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault(); // Prevenir el menú contextual por defecto
+    
+        const menu = document.getElementById('context-menu');
+        if (menu) {
+          // Posicionar el menú en la ubicación del cursor
+          menu.style.top = `${e.pageY}px`;
+          menu.style.left = `${e.pageX}px`;
+          menu.style.display = 'block';
+        }
+      });
+    
+      // Ocultar el menú contextual al hacer clic en cualquier otra parte
+      document.addEventListener('click', function(e) {
+        const menu = document.getElementById('context-menu');
+        if (menu) {
+          menu.style.display = 'none';
+        }
+      });
+    
+      // (Opcional) Puedes añadir listeners a cada opción del menú para ejecutar acciones
+      document.querySelectorAll('#context-menu li').forEach(item => {
+        item.addEventListener('click', function() {
+          alert(`Seleccionaste: ${this.textContent}`);
+          // Aquí puedes agregar la acción correspondiente para cada opción.
+        });
+      });
+    </script>
+    
+  <script src="js/sidebar.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/car.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

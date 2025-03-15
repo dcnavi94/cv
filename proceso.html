@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Procesos Industriales</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Ajusta el contenido para que no se superponga con la barra lateral (90px) y superior */
+    .main-container {
+      margin-left: 90px; /* Ajustado a 90px para la barra lateral */
+      margin-top: 60px;  /* Espacio para la barra superior */
+    }
+    /* Efecto hover: luz neon blanca en la card */
+    .card {
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .card:hover {
+      box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8);
+      transform: scale(1.02);
+    }
+    /* Recuadro para los títulos de cada card */
+    .card-title {
+      border: 2px solid #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    /* Media Query para dispositivos móviles */
+    @media (max-width: 768px) {
+      .main-container {
+        margin-left: 0; /* Elimina el margen lateral en móviles */
+        margin-top: 60px;
+      }
+      .card {
+        max-width: 90%;  /* Limita el ancho para que no ocupe todo el espacio */
+        margin: 0 auto 20px; /* Centra la card y agrega margen inferior */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenedor donde se carga la barra lateral y superior -->
+  <div id="menu-container"></div>
+
+  <!-- Contenido principal -->
+  <div class="main-container py-4">
+    <div class="container">
+      <h2 class="text-center mb-4">Procesos Industriales y Normativas</h2>
+      
+      <div class="row">
+        <!-- Lean Manufacturing -->
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div class="icon-container me-3">
+                  <i class="fas fa-industry fa-2x text-primary"></i>
+                </div>
+                <h4 class="card-title mb-0">Lean Manufacturing Green Belt</h4>
+              </div>
+              <p class="card-text">
+                Implementé prácticas de mejora continua y reducción de desperdicios en procesos escolares. Lideré proyectos utilizando herramientas Lean como 5S, Kaizen y Six Sigma, optimizando la gestión de recursos y mejorando la eficiencia y calidad de los servicios educativos.
+              </p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check text-success me-2"></i>Reducción de costos y tiempos</li>
+                <li><i class="fas fa-check text-success me-2"></i>Optimización del flujo de trabajo</li>
+                <li><i class="fas fa-check text-success me-2"></i>Eliminación de desperdicios</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Six Sigma -->
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div class="icon-container me-3">
+                  <i class="fas fa-chart-line fa-2x text-primary"></i>
+                </div>
+                <h4 class="card-title mb-0">Six Sigma Green Belt</h4>
+              </div>
+              <p class="card-text">
+                Implementé prácticas de mejora continua y reducción de desperdicios en procesos escolares. Lideré proyectos utilizando herramientas Six Sigma como DMAIC y análisis estadístico, optimizando la gestión de recursos y mejorando la eficiencia y calidad de los servicios educativos.
+              </p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check text-success me-2"></i>Optimización basada en análisis estadístico</li>
+                <li><i class="fas fa-check text-success me-2"></i>Reducción de defectos y errores</li>
+                <li><i class="fas fa-check text-success me-2"></i>Enfoque en mejora continua</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- IATF 16949:2016 -->
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div class="icon-container me-3">
+                  <i class="fas fa-cogs fa-2x text-primary"></i>
+                </div>
+                <h4 class="card-title mb-0">IATF 16949:2016</h4>
+              </div>
+              <p class="card-text">
+                Experiencia en la implementación y mantenimiento del sistema de gestión de calidad IATF 16949:2016 en entornos educativos. Lideré proyectos de mejora continua, asegurando el cumplimiento de estándares internacionales y optimizando procesos para mejorar la calidad y eficiencia en la gestión de recursos y servicios escolares.
+              </p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check text-success me-2"></i>Gestión de calidad en automoción</li>
+                <li><i class="fas fa-check text-success me-2"></i>Requisitos para proveedores</li>
+                <li><i class="fas fa-check text-success me-2"></i>Control y prevención de riesgos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- NOM 026 -->
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <div class="icon-container me-3">
+                  <i class="fas fa-exclamation-triangle fa-2x text-primary"></i>
+                </div>
+                <h4 class="card-title mb-0">NOM 026: Colores y Señales de Seguridad</h4>
+              </div>
+              <p class="card-text">
+                Lideré proyectos para mejorar la señalización, garantizando un ambiente seguro y conforme a normativas, optimizando la gestión de riesgos y la comunicación visual, dentro de una escuela.
+              </p>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check text-success me-2"></i>Clasificación de riesgos</li>
+                <li><i class="fas fa-check text-success me-2"></i>Uso de colores para señalización</li>
+                <li><i class="fas fa-check text-success me-2"></i>Normativa obligatoria en entornos laborales</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.main-container -->
+  <script>
+    // Mostrar menú contextual personalizado al hacer clic derecho
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault(); // Prevenir el menú contextual por defecto
+  
+      const menu = document.getElementById('context-menu');
+      if (menu) {
+        // Posicionar el menú en la ubicación del cursor
+        menu.style.top = `${e.pageY}px`;
+        menu.style.left = `${e.pageX}px`;
+        menu.style.display = 'block';
+      }
+    });
+  
+    // Ocultar el menú contextual al hacer clic en cualquier otra parte
+    document.addEventListener('click', function(e) {
+      const menu = document.getElementById('context-menu');
+      if (menu) {
+        menu.style.display = 'none';
+      }
+    });
+  
+    // (Opcional) Puedes añadir listeners a cada opción del menú para ejecutar acciones
+    document.querySelectorAll('#context-menu li').forEach(item => {
+      item.addEventListener('click', function() {
+        alert(`Seleccionaste: ${this.textContent}`);
+        // Aquí puedes agregar la acción correspondiente para cada opción.
+      });
+    });
+  </script>
+  
+  <script src="js/sidebar.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

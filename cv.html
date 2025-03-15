@@ -1,0 +1,120 @@
+<div class="window" id="cv">
+    <!-- Barra de título -->
+    <div class="title-bar">
+        <i class="fas fa-user"></i>
+        <span>Quien Soy</span>
+        <button class="close-btn" onclick="closeWindow('cv')">X</button>
+    </div>
+
+    <div class="cv-content">
+        <!-- Sección de la imagen de perfil -->
+        <div class="left-section">
+            <img src="images/YO.jpg" alt="Perfil" class="profile-img">
+        </div>
+
+        <!-- Sección con la información personal -->
+        <div class="cv-info">
+            <p><i class="fas fa-user"></i> <strong>Nombre:</strong> Iván Carapia Barajas</p>
+            <br>
+            <p><i class="fas fa-briefcase"></i> <strong>Profesión:</strong> Ing Industrial / Ing en Computación</p>
+            <br>
+            <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:icarapia94@gmail.com">icarapia94@gmail.com</a></p>
+            <br>
+            <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> <a href="https://wa.link/g0tmnx"> 442-36-95-920 </a></p>
+            <br>
+            <!-- Sección colapsable "Sobre mí" -->
+            <button class="btn btn-secondary lateral-btn" type="button" data-bs-toggle="collapse" data-bs-target="#sobreMi" aria-expanded="false">
+                <i class="fa fa-user"></i> Sobre mí
+            </button>
+            <div class="collapse mt-2" id="sobreMi">
+                <p class="description">
+                    Soy un apasionado por la optimización de procesos, la robótica y el Internet de las cosas, enfocado en implementar soluciones innovadoras que potencian la eficiencia organizacional. 
+                    Mi curiosidad y perseverancia me impulsan a aprender y aplicar tecnologías avanzadas para enfrentar desafíos complejos, siempre alineado a cumplir objetivos estratégicos y superar los KPIs establecidos.
+                </p>
+            </div>
+
+            <!-- Sección colapsable "Experiencia" -->
+            <button class="btn btn-secondary lateral-btn" type="button" data-bs-toggle="collapse" data-bs-target="#experiencia" aria-expanded="false">
+                <i class="fas fa-briefcase"></i> Experiencia
+            </button>
+            <div class="collapse lateral-content" id="experiencia">
+                <div>
+                    <br>
+                    <h3><i class="fas fa-microchip"></i> Administrador de laboratorio de electrónica</h3>
+                    <p>Aseguré su buen funcionamiento, desarrollé manuales y apoyé proyectos tecnológicos académicos.</p>
+                </div>
+                <div>
+                    <h3><i class="fas fa-laptop-code"></i> Administrador de Informatización</h3>
+                    <p>Implementé sistemas, capacité personal y resolví problemas tecnológicos en la institución.</p>
+                </div>
+                <div>
+                    <h3><i class="fas fa-server"></i> Administrador de Sistemas Escolares</h3>
+                    <p>Administré un sistema escolar, ofrecí soporte técnico, actualicé plataformas y aseguré la integridad de datos.</p>
+                </div>
+                <br>
+            </div>
+
+            <!-- Sección colapsable "Habilidades" -->
+            <button class="btn btn-secondary lateral-btn" type="button" data-bs-toggle="collapse" data-bs-target="#skills" aria-expanded="false">
+                <i class="fas fa-cogs"></i> Skills
+            </button>
+            <div class="collapse lateral-content" id="skills">
+                <div>
+                    <br>
+                    <h5><i class="fas fa-paint-brush"></i> Diseño Gráfico</h5>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h5><i class="fa fa-sitemap"></i> Gestión y Optimización de Procesos</h5>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h5><i class="fa fa-code"></i> Programación</h5>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h5><i class="fa fa-users"></i> Trabajo en Equipo</h5>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h5><i class="fa fa-book"></i> Inglés</h5>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%;"></div>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <!-- Botones para habilidades técnicas y de procesos -->
+            <button class="btn btn-secondary lateral-btn" type="button" onclick="window.location.href='HTecnicas.html'" aria-expanded="false">
+                <i class="fa fa-microchip"></i> H.Tecnicas
+            </button>
+            <button class="btn btn-secondary lateral-btn" type="button" onclick="window.location.href='proceso.html'" aria-expanded="false">
+                <i class="fa fa-spinner"></i> H.Procesos
+            </button>
+        </div>
+
+        <!-- Sección de redes sociales -->
+        <div class="right-section">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ivan-carapia-barajas/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/dcnavi94" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/@icarapia94" target="_blank" title="Youtube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
