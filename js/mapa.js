@@ -12,32 +12,23 @@
           ]
         },
         {
-          name: "Configuración de servidores Linux",
+          name: "Configuración de Servidores Linux",
           children: [
             { name: "EC2 (AWS)" },
-            { name: "Droplet (Digital Ocean)" }
+            { name: "Droplets (Digital Ocean)" }
           ]
         },
         {
           name: "Instalación de Paneles Solares",
-          children: [
-            { name: "Sistemas Aislados" },
-            { name: "Sistemas Conectados a la Red" }
-          ]
+        
         },
         {
           name: "Modelado y Diseño 3D",
-          children: [
-            { name: "Google SketchUp y Blender" },
-            { name: "Entornos inmersivos y archivos para impresión 3D" }
-          ]
+          
         },
         {
           name: "Instalación de Cableado Estructurado",
-          children: [
-            { name: "Planificación y diseño de infraestructura de red" },
-            { name: "Instalación de cables, conectores y racks" }
-          ]
+         
         },
         {
           name: "Soluciones de Internet de las cosas (IoT)",
@@ -54,7 +45,7 @@
     // ----------------------
     // Tamaño base para el diagrama (referencia para el viewBox)
     const baseWidth = 800;
-    const baseHeight = 800;
+    const baseHeight = 950;
     const width = baseWidth;
     const height = baseHeight;
     const radius = width / 2; // Radio para el árbol radial
